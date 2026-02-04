@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Sasha ❤️</title>
+
+<style>
+body {
+    background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #ff004c;
+    font-size: 45px;
+    margin-top: 30px;
+    text-shadow: 2px 2px white;
+}
+
+#container {
+    margin-top: 50px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#yesBtn {
+    background: #ff004c;
+    color: white;
+}
+
+#noBtn {
+    background: white;
+    color: #ff004c;
+}
+
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 24px;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(100vh); }
+}
+
+#letter {
+    display: none;
+    background: white;
+    width: 60%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 30px;
+    font-size: 18px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+#teddies {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.encourage {
+    color: #ff004c;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 22px;
+}
+</style>
+
+<script>
+
+function createHearts() {
+    for (let i = 0; i < 50; i++) {
+        let heart = document.createElement("div");
+        heart.className = "heart";
+        heart.innerHTML = "❤️";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+        document.body.appendChild(heart);
+    }
+}
+
+function sheSaidYes() {
+    document.getElementById("letter").style.display = "block";
+    document.getElementById("container").style.display = "none";
+}
+
+function moveNo() {
+    let btn = document.getElementById("noBtn");
+    btn.style.position = "absolute";
+    btn.style.top = Math.random() * 80 + "vh";
+    btn.style.left = Math.random() * 80 + "vw";
+}
+
+window.onload = createHearts;
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Happy Valentine’s Day Sasha 💕</h1>
+
+<div id="teddies">
+🧸💖🧸💖🧸
+</div>
+
+<div id="container">
+    <h2>Ayisha, will you be my Valentine? 😏</h2>
+
+    <p class="encourage">
+        You are amazing.<br>
+        You are beautiful.<br>
+        You are loved.<br>
+        And you look cute even when you mad 😌
+    </p>
+
+    <p><b>Inside Joke:</b> “Hopefully you say YES on the first try this time” 😭</p>
+
+    <button id="yesBtn" onclick="sheSaidYes()">YESSS 💘</button>
+    <button id="noBtn" onmouseover="moveNo()">No 😒</button>
+</div>
+
+<div id="letter">
+    <h2>To My Beautiful Baby 💌</h2>
+
+    <p>
+    I will forever be grateful to have you in my life.  
+    You bring me happiness, peace, and more love than you even realize.  
+    Every moment with you means the world to me.
+    </p>
+
+    <p>
+    Thank you for being you.  
+    My Sasha. My baby. My Valentine ❤️
+    </p>
+
+    <h3>Forever Yours 💖</h3>
+</div>
+
+</body>
+</html>
