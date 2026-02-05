@@ -11,7 +11,7 @@ body {
     padding: 0;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom right, #ff758c, #ff7eb3, #ffc3a0);
+    background: linear-gradient(to bottom right, #ff4b6e, #ff7eb3, #ffffff);
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
@@ -21,7 +21,7 @@ body {
     background: rgba(255,255,255,0.95);
     width: 70%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 60px;
     padding: 30px;
     border-radius: 25px;
     box-shadow: 0px 0px 25px rgba(0,0,0,0.2);
@@ -37,11 +37,6 @@ h1 {
 .subtitle {
     font-size: 22px;
     color: #d10040;
-}
-
-#spongebob {
-    width: 220px;
-    margin: 20px 0;
 }
 
 button {
@@ -91,17 +86,6 @@ button {
     margin-top: 30px;
     font-size: 18px;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-    position: relative;
-}
-
-#fireworks {
-    display: none;
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
-    z-index: 999;
 }
 
 .encourage {
@@ -156,14 +140,6 @@ function createHearts() {
 function sheSaidYes() {
     document.getElementById("letter").style.display = "block";
     document.getElementById("main").style.display = "none";
-    document.getElementById("fireworks").style.display = "block";
-}
-
-function moveNo() {
-    let btn = document.getElementById("noBtn");
-    btn.style.position = "absolute";
-    btn.style.top = Math.random() * 70 + "vh";
-    btn.style.left = Math.random() * 80 + "vw";
 }
 
 function showPopup() {
@@ -185,15 +161,13 @@ window.onload = createHearts;
 
     <h1>Happy Valentine’s Day Sasha 💖</h1>
 
-    <img id="spongebob" src="https://i.imgur.com/63IGa8g.png" alt="Spongebob holding flowers">
-
-    <p class="subtitle">Ayisha, will you be my Valentine? 😊</p>
+    <p class="subtitle">Dear Ayisha, will you be my Valentine? 😊</p>
 
     <p class="encourage">
         You are amazing.<br>
         You are beautiful.<br>
         You are loved.<br>
-        And you look cute even when you mad 😌
+        And you look cute even when you're tired 😌
     </p>
 
     <button id="yesBtn" onclick="sheSaidYes()">YES 💘</button>
@@ -201,20 +175,18 @@ window.onload = createHearts;
 
 </div>
 
-<img id="fireworks" src="https://i.imgur.com/zzCjXcM.png" alt="fireworks burst">
-
 <div id="letter">
     <h2 style="color:#ff0055;">To My Beautiful Baby 💌</h2>
 
     <p>
     I will forever be grateful to have you in my life.  
-    You bring me happiness, peace, and more love than you even realize.  
+    You such a hard working and kind woman, I will forever continue to love and support you until the day we say goodbye baby.  
     Every moment with you means the world to me.
     </p>
 
     <p>
     Thank you for being you.  
-    My Sasha. My baby. My Valentine ❤️
+    My Bestfriend. My baby. My Valentine ❤️
     </p>
 
     <h3 style="color:#ff0055;">Forever Yours 💖</h3>
